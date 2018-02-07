@@ -1,0 +1,24 @@
+.reviews {
+  margin: 0 30px;
+}
+
+.reviews__title {
+  @include section-header();
+}
+
+.reviews__item {
+  margin: 0;
+
+  line-height: $review-lh;
+}
+
+.reviews__author-name {
+  font-weight: $font-bold;
+  font-size: $review-author-fs;
+  color: $review-author-color;
+  font-style: normal;
+}
+
+.reviews__author-email {
+  font-size: $review-author-fs;
+}

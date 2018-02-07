@@ -1,0 +1,20 @@
+.about-us {
+  margin: 0 30px;
+}
+.about-us__title {
+  @include section-header();
+}
+
+.about-us__advantages {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.about-us__advantage {
+  margin-top: 90px;
+
+  font-weight: $font-bold;
+  color: $advantage-color;
+}

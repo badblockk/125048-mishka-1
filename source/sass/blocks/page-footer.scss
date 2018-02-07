@@ -1,0 +1,20 @@
+.page-footer {
+  text-align: center;
+
+  background-color: $bg-gray;
+}
+
+.page-footer__social {
+  margin: 0 30px;
+
+  border-bottom: $border-color solid 1px;
+}
+
+.page-footer__copyright {
+  padding: 20px 0;
+
+  font-weight: $font-bold;
+  font-size: $copyright-fs;
+  line-height: $copyright-lh;
+  color: $copyright-color;
+}

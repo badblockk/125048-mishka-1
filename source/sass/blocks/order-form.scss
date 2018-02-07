@@ -1,0 +1,52 @@
+.order-form {
+  margin: 0 30px;
+  margin-bottom: 55px;
+}
+
+.order-form__description {
+  font-size: $form-desc-fs;
+}
+
+.order-form__fieldset {
+  padding: 0;
+
+  border: none;
+}
+
+.order-form__legend {
+  padding: 10px 0;
+  font-weight: $font-bold;
+  font-size: $form-legend-fs;
+  color: $legend-tiffany;
+  text-transform: uppercase;
+}
+
+.order-form__label {
+  padding: 20px 0;
+
+  &#{&}--indented {
+    padding-left: 62px;
+  }
+
+  font-weight: $font-bold;
+  font-size: $form-label-fs;
+  line-height: $form-label-lh;
+}
+
+.order-form__input {
+  font-size: $form-input-fs;
+  line-height: $form-input-lh;
+
+  border: none;
+  border-bottom: #000000 solid 2px;
+}
+
+.order-form__footnote {
+  font-size: $footnote-fs;
+  line-height: $footnote-lh;
+}
+
+.order-form__to-send {
+  width: 100%;
+  margin-top: 30px;
+}

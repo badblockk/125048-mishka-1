@@ -3,19 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__logo">
-        <a href="index.html"><img src="" width="" height="" alt="Mishka"></a>
+        <a href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
       </div>
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle main-nav__toggle--close" type="button"></button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="">Вязание на заказ</a></li>
-          <li class="main-nav__item main-nav__item--search"><a href="">Поиск по сайту</a></li>
-          <li class="main-nav__item main-nav__item--cart"><a href="">Корзина: пока пуста</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="">Вязание на заказ</a></li>
+          <li class="main-nav__item main-nav__item--search"><a class="main-nav__link" href="">Поиск по сайту</a></li>
+          <li class="main-nav__item main-nav__item--cart"><a class="main-nav__link" href="">Корзина: пока пуста</a></li>
         </ul>
       </nav>
       <h2 class="page-header__title">Вязание на заказ</h2>
@@ -27,24 +28,24 @@
           <fieldset class="order-form__fieldset">
             <legend class="order-form__legend">Тип</legend>
             <input class="input input--radio order-form__input" type="radio" name="type" id="accessory" value="accessory" checked>
-            <label class="label order-form__label" for="accessory">Аксессуар для интерьера</label>
+            <label class="label order-form__label order-form__label--indented" for="accessory">Аксессуар для интерьера</label>
             <input class="input input--radio order-form__input" type="radio" name="type" id="toy" value="toy">
-            <label class="label order-form__label" for="toy">Детская игрушка</label>
+            <label class="label order-form__label order-form__label--indented" for="toy">Детская игрушка</label>
           </fieldset>
           <fieldset class="order-form__fieldset">
             <legend class="order-form__legend">Цвет</legend>
             <input class="input input--checkbox order-form__input" type="checkbox" name="white" id="white" checked>
-            <label class="label order-form__label" for="white">Белый</label>
+            <label class="label order-form__label order-form__label--indented" for="white">Белый</label>
             <input class="input input--checkbox order-form__input" type="checkbox" name="gray" id="gray" checked>
-            <label class="label order-form__label" for="gray">Серый</label>
+            <label class="label order-form__label order-form__label--indented" for="gray">Серый</label>
             <input class="input input--checkbox order-form__input" type="checkbox" name="tiffany" id="tiffany">
-            <label class="label order-form__label" for="tiffany">«Тиффани»</label>
+            <label class="label order-form__label order-form__label--indented" for="tiffany">«Тиффани»</label>
             <input class="input input--checkbox order-form__input" type="checkbox" name="black" id="black">
-            <label class="label order-form__label" for="black">Черный</label>
+            <label class="label order-form__label order-form__label--indented" for="black">Черный</label>
             <input class="input input--checkbox order-form__input" type="checkbox" name="pink" id="pink">
-            <label class="label order-form__label" for="pink">Розовый</label>
+            <label class="label order-form__label order-form__label--indented" for="pink">Розовый</label>
             <input class="input input--checkbox order-form__input" type="checkbox" name="orange" id="orange">
-            <label class="label order-form__label" for="orange">Оранжевый</label>
+            <label class="label order-form__label order-form__label--indented" for="orange">Оранжевый</label>
           </fieldset>
           <fieldset class="order-form__fieldset">
             <legend class="order-form__legend">ФИО</legend>

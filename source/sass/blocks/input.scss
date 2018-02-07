@@ -1,0 +1,11 @@
+.input {
+  display: block;
+
+  &#{&}--radio {
+    display: none;
+  }
+
+  &#{&}--checkbox {
+    display: none;
+  }
+}

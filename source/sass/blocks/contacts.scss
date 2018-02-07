@@ -1,0 +1,30 @@
+.contacts {
+  margin: 0 30px;
+}
+
+.contacts__title {
+  font-weight: $font-bold;
+  font-size: $contacts-header-fs;
+  line-height: $contacts-header-lh;
+  color: $section-header-color;
+}
+
+.contacts__value {
+  width: 75px;
+
+  vertical-align: top;
+}
+
+.contacts__email {
+  color: $link-color;
+  text-decoration: none;
+}
+
+.contacts__value,
+.contacts__field {
+  padding-bottom: 40px;
+}
+
+.contacts__to-write-us {
+  margin: 40px 0;
+}

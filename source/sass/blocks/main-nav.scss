@@ -1,0 +1,24 @@
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  &:last-child {
+    border-bottom: $border-color solid 1px;
+  }
+}
+
+.main-nav__link {
+  display: block;
+  padding: 30px 60px;
+  padding-left: 75px;
+
+  font-weight: $font-bold;
+  font-size: $main-nav-link-fs;
+  // line-height: $main-nav-link-lh;
+  color: #000000;
+  text-decoration: none;
+
+  border-top: $border-color solid 1px;
+}

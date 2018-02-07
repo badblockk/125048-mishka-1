@@ -1,0 +1,42 @@
+.featured-item {
+  margin: 0 30px;
+}
+
+.featured-item__title {
+  margin-top: 30px;
+  margin-bottom: 0;
+
+  @include section-header();
+}
+
+.featured-item__feature {
+  font-weight: $font-bold;
+  font-size: $feature-fs;
+  line-height: $feature-lh;
+  color: $feature-tiffany;
+}
+
+.featured-item__price {
+  display: block;
+  padding: 25px 65px;
+
+  font-weight: $font-bold;
+  font-size: $feature-price-fs;
+  text-align: center;
+}
+
+.featured-item__description {
+  margin: 30px 0;
+}
+
+.featured-item__value,
+.featured-item__field {
+  padding: 8px 0;
+  padding-right: 25px;
+
+  border-bottom: $border-color solid 1px;
+}
+
+.featured-item__photo {
+  margin-top: 25px;
+}

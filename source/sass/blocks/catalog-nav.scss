@@ -1,0 +1,26 @@
+.catalog-nav {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog-nav__link {
+  display: block;
+  padding: 40px 30px;
+
+  font-weight: $font-bold;
+  font-size: $nav-link-fs;
+  // line-height: $nav-link-lh;
+  color: $nav-link-color;
+  text-decoration: none;
+
+  &#{&}--interior {
+    background-color: $bg-tiffany;
+  }
+
+  &#{&}--toys {
+  background-color: $bg-darktiffany;
+  }
+}

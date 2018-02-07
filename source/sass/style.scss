@@ -1,0 +1,28 @@
+@import "normalize";
+
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
+
+@import "mixin.scss";
+
+@import "blocks/about-us.scss";
+@import "blocks/btn.scss";
+@import "blocks/catalog-item.scss";
+@import "blocks/catalog-nav.scss";
+@import "blocks/catalog.scss";
+@import "blocks/contacts.scss";
+@import "blocks/featured-item.scss";
+@import "blocks/input.scss";
+@import "blocks/label.scss";
+@import "blocks/main-content.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/modal-cart.scss";
+@import "blocks/order-form.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/promo.scss";
+@import "blocks/reviews.scss";
+@import "blocks/social-link.scss";
+@import "blocks/textarea.scss";
+@import "blocks/video.scss";
