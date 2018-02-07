@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__logo">
+        <a href="index.html"><img src="" width="" height="" alt="Mishka"></a>
+      </div>
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle main-nav__toggle--close" type="button"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item main-nav__item--search"><a href="">Поиск по сайту</a></li>
+          <li class="main-nav__item main-nav__item--cart"><a href="">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+      <h2 class="page-header__title">Каталог товаров</h2>
+    </header>
+    <main class="main-content">
+      <section class="catalog">
+        <div class="catalog-item">
+          <a class="catalog-item__photo" href="">
+            <img src="" width="" height="" alt="Зайчик-попрыгайчик">
+          </a>
+          <div class="catalog-item__description">
+            <a class="catalog-item__title" href="">Зайчик-попрыгайчик</a>
+            <span class="catalog-item__details">Рост 30 см, вес 200 г</span>
+            <div class="catalog-item__price">
+              <span class="catalog-item__price-value">1200 руб.</span>
+              <a class="catalog_item__add-to-cart" href=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <a class="catalog-item__photo" href="">
+            <img src="" width="" height="" alt="Корзинка для белья">
+          </a>
+          <div class="catalog-item__description">
+            <a class="catalog-item__title" href="">Корзинка для белья</a>
+            <span class="catalog-item__details">Диаметр 15 см, высота 10 см</span>
+            <div class="catalog-item__price">
+              <span class="catalog-item__price-value">690 руб.</span>
+              <a class="catalog_item__add-to-cart" href=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <a class="catalog-item__photo" href="">
+            <img src="" width="" height="" alt="Большая корзинка для игрушек">
+          </a>
+          <div class="catalog-item__description">
+            <a class="catalog-item__title" href="">Большая корзинка для игрушек</a>
+            <span class="catalog-item__details">Диаметр 30 см, высота 30 см</span>
+            <div class="catalog-item__price">
+              <span class="catalog-item__price-value">1500 руб.</span>
+              <a class="catalog_item__add-to-cart" href=""></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="video">
+        <h3 class="video__title">Процесс производства</h3>
+        <div class="video__content">
+          <img src="" width="" height="" alt="Процесс производства">
+          <button class="video__to-play" type="button"></button>
+        </div>
+        <p class="video__description">По просьбам наших любимых фоловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="btn video__to-order" href="">Сделать заказ</a>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__social">
+        <a class="social-link social-link--vk" href="">Instagram</a>
+        <a class="social-link social-link--fb" href="">Facebook</a>
+        <a class="social-link social-link--in" href="">Twitter</a>
+      </div>
+      <div class="page-footer__copyright">
+        Разработано
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
+      </div>
+    </footer>
+
+    <div class="modal-cart">
+      <h2 class="modal-cart__title">Добавить в корзину</h2>
+      <span class="modal-cart__description">Выберите размер:</span>
+      <div class="modal-cart__select-size">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <input class="input modal-cart__input" type="radio" name="size" id="size-s" value="size-s" checked>
+          <label class="label modal-cart__label" for="size-s">S</label>
+          <input class="input modal-cart__input" type="radio" name="size" id="size-m" value="size-m">
+          <label class="label modal-cart__label" for="size-m">M</label>
+          <input class="input modal-cart__input" type="radio" name="size" id="size-l" value="size-l">
+          <label class="label modal-cart__label" for="size-l">L</label>
+          <button class="btn modal-cart__to-add" type="submit">Добавить</button>
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>
