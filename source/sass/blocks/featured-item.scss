@@ -1,4 +1,8 @@
 .featured-item {
+  @include zigzag-line();
+}
+
+.featured-item__wrapper {
   @include container();
 
   padding-bottom: 42px;
@@ -112,7 +116,7 @@
   @media #{$tablet-widths} {
     position: absolute;
     width: 333px;
-    height: 404px; //Временно
+    height: 404px;
     top: 107px;
     right: 51px;
   }

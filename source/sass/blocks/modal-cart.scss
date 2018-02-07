@@ -67,6 +67,10 @@
 
 .modal-cart__input {
   display: none;
+
+  &:checked + .modal-cart__label {
+    border-color: #62d1ba;
+  }
 }
 
 .modal-cart__label {
@@ -117,7 +121,7 @@
   }
 
   &:active {
-    color: $font-white;
+    color: #97e2d2;
     background-color: $bg-tiffany-effect;
   }
 

@@ -48,3 +48,18 @@
 
   list-style: none;
 }
+
+@mixin zigzag-line() {
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: auto 7px;
+
+  @media #{$tablet-widths} {
+    background-size: auto 17px;
+  }
+
+  @media #{$desktop-widths} {
+    background-size: auto 23px;
+  }
+}

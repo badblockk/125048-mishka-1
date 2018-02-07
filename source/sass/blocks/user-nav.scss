@@ -53,44 +53,44 @@
   color: $font-black;
   padding-left: 45px;
 
+  svg {
+    position: absolute;
+    top: 4px;
+    left: 1px;
+    opacity: 0.2;
+  }
+
   &:hover {
     color: $link-hover;
+
+    svg {
+      opacity: 1;
+      fill: $icon-fill;
+    }
   }
 
   &:active {
     color: $link-active;
-  }
 
-  &::before {
-    content: "";
-    position: absolute;
-    opacity: 0.3;
-  }
-
-  &#{&}--search::before {
-    width: 18px;
-    height: 19px;
-    top: 4px;
-    left: 2px;
-    background: url("../img/icon-search.svg") no-repeat;
-  }
-
-  &#{&}--cart::before {
-    width: 21px;
-    height: 19px;
-    top: 3px;
-    left: 1px;
-    background: url("../img/icon-cart.svg") no-repeat;
+    svg {
+      opacity: 0.3;
+    }
   }
 
   @media #{$tablet-widths} {
-    &#{&}--search::before {
-      top: 5px;
-      left: 33px;
+
+    &#{&}--search {
+      svg {
+        top: 5px;
+        left: 33px;
+      }
     }
 
-    &#{&}--cart::before {
-      left: 31px;
+    &#{&}--cart {
+      svg {
+        top: 3px;
+        left: 31px;
+      }
     }
   }
 }

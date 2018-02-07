@@ -16,7 +16,26 @@
 }
 
 .page-footer__logo {
+  position: relative;
   display: none;
+  margin-bottom: 14px;
+  margin-left: 1px;
+
+  svg {
+    display: block;
+  }
+
+  &:hover {
+    svg {
+      fill: $icon-fill-effect;
+    }
+  }
+
+  &:active {
+    svg {
+      opacity: 0.3;
+    }
+  }
 
   @media #{$tablet-widths} {
     width: 28%;
@@ -40,8 +59,8 @@
 }
 
 .page-footer__copyright {
-  padding: 21px 0;
-  padding-bottom: 23px;
+  padding: 20px 0;
+  padding-bottom: 24px;
 
   font-size: 0;
 
@@ -51,31 +70,39 @@
   }
 }
 
-.page-footer__copyright-text {
-  display: inline-block;
-  padding-bottom: 5px;
-  padding-right: 30px;
+.page-footer__copyright-link {
+  position: relative;
   vertical-align: middle;
   font-size: 19px;
   line-height: 19px;
   font-weight: $font-bold;
   color: $font-black;
+  text-decoration: none;
+  padding: 3px 50px 5px 0;
 
-  @media #{$tablet-widths} {
-    padding-bottom: 3px;
-    padding-right: 27px;
+  svg {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    fill: $icon-fill;
   }
-}
 
-.page-footer__copyright-link {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 0;
-  width: 29px;
-  height: 36px;
-  background: url("../img/logo-htmlacademy.svg") no-repeat;
-
-  @media #{$tablet-widths} {
-    background-position: 2px;
+  &:hover {
+    svg {
+      fill: $icon-fill-effect;
+    }
   }
+
+  &:active {
+    color: #bfbfbf;
+
+    svg {
+      opacity: 0.3;
+    }
+  }
+
+  @media #{$desktop-widths} {
+    padding-right: 57px;
+  }
+
 }
