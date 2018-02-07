@@ -1,7 +1,20 @@
 .page-header {
   position: relative;
   background: $bg-header;
-  margin-bottom: 27px;
+
+  // margin-bottom: 27px;
+  margin-bottom: 22px; // form
+
+  @media #{$tablet-widths} {
+    margin-bottom: 47px;
+  }
+
+  @media #{$desktop-widths} {
+    &#{&}--dark-gray {
+      background-color: $bg-title;
+    }
+    margin-bottom: 74px;
+  }
 }
 
 .page-header__logo {
@@ -20,9 +33,6 @@
     padding-left: 50px;
 
     text-align: left;
-
-    border-top: none;
-    border-right: $border-color solid 1px;
   }
 
   @media #{$desktop-widths} {
@@ -33,11 +43,18 @@
 }
 
 .page-header__wrapper {
+  position: relative;
+  background-color: $bg-title;
+
   @media #{$tablet-widths} {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
+    &#{&}--light-gray {
+      background-color: $bg-header;
+    }
   }
 
   @media #{$desktop-widths} {
@@ -50,14 +67,27 @@
   @include page-header();
 
   margin: 0 auto;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
+  margin-bottom: 0px; // form
   max-width: 1150px;
 
-  background-color: $bg-title;
+  // background-color: $bg-title;
+  background-color: #f1f1f1; // form
 
   @media #{$tablet-widths} {
     @include section-header();
+    padding: 35px 0;
+    padding-bottom: 78px;
+    // padding-left: 10px;
+    padding-left: 5px;
   }
+
+  @media #{$desktop-widths} {
+    padding-left: 0;
+    padding-bottom: 100px;
+  }
+
+
 }
 
 .page-header__delivery {
@@ -65,7 +95,6 @@
 
   @media #{$tablet-widths} {
     display: flex;
-    flex-grow: 1;
     justify-content: flex-end;
     align-items: center;
     align-self: stretch;
@@ -73,7 +102,9 @@
 
     text-align: right;
 
-    background: $bg-header;
+    &#{&}--light-gray {
+      background-color: $bg-header;
+    }
   }
 }
 
@@ -91,7 +122,7 @@
   background-color: $bg-white;
   border: none;
 
-  &#{&}--closed::before {
+  &#{&}--opened::before {
     content: "";
     position: absolute;
     width: 20px;

@@ -1,14 +1,17 @@
 .modal-cart {
+  width: 260px;
+  margin: 0 auto;
   padding: 45px 30px;
-
-  font-size: 0;
+  padding-top: 31px;
 
   border-top: $border-color solid 1px;
 
   @media #{$tablet-widths} {
-    width: 350px;
+    width: 565px;
     margin: 50px auto;
-    padding: 50px 100px;
+    padding: 33px 100px;
+    padding-bottom: 47px;
+    box-sizing: border-box;
 
     border: $border-color solid 1px;
   }
@@ -18,30 +21,44 @@
   @include section-header();
 
   padding: 0 50px;
-  padding-bottom: 20px;
+  margin-bottom: 13px;
 
   text-align: center;
   text-transform: uppercase;
 
   @media #{$tablet-widths} {
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 14px;
     font-size: 30px;
     line-height: 57px;
+
   }
 }
 
 .modal-cart__description {
   display: block;
 
-  font-size: $fs-small;
   line-height: $lh-large;
   text-align: center;
+  margin-bottom: 22px;
+
+  @media #{$tablet-widths} {
+    font-size: $fs-base;
+    margin: 0 auto;
+    margin-bottom: 21px;
+  }
 }
 
 .modal-cart__form-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 31px;
 
   @media #{$tablet-widths} {
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 31px;
     justify-content: space-between;
 
     text-align: center;
@@ -53,14 +70,14 @@
 }
 
 .modal-cart__label {
+  width: 82px;
+  padding: 15px 33px;
+
+  box-sizing: border-box;
   cursor: pointer;
-  display: inline-block;
-  margin-right: 7px;
-  padding: 10px 33px;
 
   font-weight: $font-bold;
   font-size: $fs-base;
-  vertical-align: middle;
 
   border: $border-color solid 2px;
 
@@ -77,21 +94,35 @@
   }
 
   @media #{$tablet-widths} {
-    flex-grow: 1;
+    width: 112px;
+    padding: 12px 33px;
   }
-}
-
-.modal-cart__select-size {
-  margin-top: 25px;
 }
 
 .modal-cart__to-add {
   width: 260px;
+  padding: 16px 30px;
   margin: auto;
   margin-top: 31px;
+  font-size: $fs-base;
 
   color: $font-white;
 
   background-color: $bg-tiffany;
   border: none;
+
+  &:hover {
+    color: $font-white;
+    background-color: $bg-tiffany-effect;
+  }
+
+  &:active {
+    color: $font-white;
+    background-color: $bg-tiffany-effect;
+  }
+
+  @media #{$tablet-widths} {
+    width: 350px;
+    margin: 0 auto;
+  }
 }

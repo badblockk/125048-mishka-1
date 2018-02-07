@@ -7,15 +7,15 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--dark-gray">
       <div class="page-header__wrapper">
         <div class="page-header__logo">
           <a href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
         </div>
-        <button class="page-header__nav-btn page-header__nav-btn--closed" type="button"></button>
-        <ul class="main-nav">
-          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+        <button class="page-header__nav-btn page-header__nav-btn--opened" type="button"></button>
+        <ul class="main-nav main-nav--dark-gray">
+          <li class="main-nav__item main-nav__item--dark-gray"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item main-nav__item--dark-gray"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
         </ul>
         <ul class="user-nav">
           <li class="user-nav__item user-nav__item--search"><a class="user-nav__link user-nav__link--search" href="">Поиск по сайту</a></li>
@@ -41,7 +41,7 @@
               <span class="catalog-item__details">Рост 30 см, вес 200 г</span>
             </div>
             <div class="catalog-item__price">
-              <span class="catalog-item__price-value">1200 руб.</span>
+              <span class="catalog-item__price-value">1 200 руб.</span>
               <a class="catalog_item__add-to-cart" href=""></a>
             </div>
           </div>
@@ -67,11 +67,11 @@
           </a>
           <div class="catalog-item__description">
             <div class="catalog-item__info">
-              <a class="catalog-item__title" href="">Большая корзинка для игрушек</a>
+              <a class="catalog-item__title" href="">Большая корзинка для&nbsp;игрушек</a>
               <span class="catalog-item__details">Диаметр 30 см, высота 30 см</span>
             </div>
             <div class="catalog-item__price">
-              <span class="catalog-item__price-value">1500 руб.</span>
+              <span class="catalog-item__price-value">1 500 руб.</span>
               <a class="catalog_item__add-to-cart" href=""></a>
             </div>
           </div>
@@ -83,8 +83,10 @@
           <img src="img/video-mobile@1x.jpg" width="260" height="150" alt="Процесс производства">
           <button class="video__to-play" type="button"></button>
         </div>
-        <p class="video__description">По просьбам наших любимых фоловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="btn video__to-order" href="">Сделать заказ</a>
+        <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <div class="video__to-order-wrapper">
+          <a class="btn video__to-order" href="">Сделать заказ</a>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -107,19 +109,17 @@
     <div class="modal-cart">
       <h2 class="modal-cart__title">Добавить в корзину</h2>
       <span class="modal-cart__description">Выберите размер:</span>
-      <div class="modal-cart__select-size">
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <div class="modal-cart__form-wrapper">
-            <input class="input modal-cart__input" type="radio" name="size" id="size-s" value="size-s" checked>
-            <label class="label modal-cart__label" for="size-s">S</label>
-            <input class="input modal-cart__input" type="radio" name="size" id="size-m" value="size-m">
-            <label class="label modal-cart__label" for="size-m">M</label>
-            <input class="input modal-cart__input" type="radio" name="size" id="size-l" value="size-l">
-            <label class="label modal-cart__label" for="size-l">L</label>
-          </div>
-          <button class="btn modal-cart__to-add" type="submit">Добавить</button>
-        </form>
-      </div>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-cart__form-wrapper">
+          <input class="input modal-cart__input" type="radio" name="size" id="size-s" value="size-s" checked>
+          <label class="label modal-cart__label" for="size-s">S</label>
+          <input class="input modal-cart__input" type="radio" name="size" id="size-m" value="size-m">
+          <label class="label modal-cart__label" for="size-m">M</label>
+          <input class="input modal-cart__input" type="radio" name="size" id="size-l" value="size-l">
+          <label class="label modal-cart__label" for="size-l">L</label>
+        </div>
+        <button class="btn modal-cart__to-add" type="submit">Добавить</button>
+      </form>
     </div>
 
   </body>

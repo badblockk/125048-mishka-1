@@ -5,24 +5,29 @@
     @include list();
     display: flex;
 
-    background: $bg-header;
+    &#{&}--light-gray {
+      background: $bg-header;
+    }
   }
 }
 
 .extra-nav__item {
   @media #{$desktop-widths} {
-    width: 186px;
-    padding: 19px 0;
+    width: 184px;
+    padding: 17px 0;
     padding-left: 50px;
 
     font-size: 15px;
     text-align: left;
 
-    background: $bg-header;
     border: none;
 
     &:nth-child(2) {
       padding-left: 35px;
+    }
+
+    &#{&}--light-gray {
+      background: $bg-header;
     }
   }
 }

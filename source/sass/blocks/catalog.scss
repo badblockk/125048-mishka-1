@@ -1,8 +1,14 @@
 .catalog {
   @include container();
+  margin-bottom: 31px;
+
+  @media #{$tablet-widths} {
+    margin-bottom: 53px;
+  }
 
   @media #{$desktop-widths} {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 57px;
   }
 }

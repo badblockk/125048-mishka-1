@@ -1,8 +1,19 @@
 .promo {
   width: 100%;
   display: block;
+  padding-top: 70px;
 
   background: $bg-header url("../img/hero-mobile@1x.jpg") no-repeat top;
+  background-position-y: -19px;
+
+  @media #{$tablet-widths} {
+    padding-top: 93px;
+    background-size: contain;
+  }
+
+  @media #{$desktop-widths} {
+    padding-top: 95px;
+  }
 }
 
 .promo__title {
@@ -11,19 +22,16 @@
   margin: 0;
   margin-bottom: 122px;
   padding: 0 30px;
-  padding-top: 90px;
 
   @media #{$tablet-widths} {
     @include section-header();
 
-    margin-top: 90px;
-    margin-bottom: 180px;
+    margin-bottom: 373px;
     padding: 0 50px;
   }
 
   @media #{$desktop-widths} {
     padding: 0 175px;
-    margin-top: 100px;
-    margin-bottom: 159px;
+    margin-bottom: 359px;
   }
 }

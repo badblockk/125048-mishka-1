@@ -1,5 +1,6 @@
 @mixin page-header() {
-  padding: 70px 0; // уточнить, почему такие паддинги
+  padding: 70px 0;
+  padding-bottom: 76px;
 
   font-weight: $font-bold;
   font-size: $fs-page-header;

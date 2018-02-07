@@ -1,22 +1,24 @@
 .about-us {
   @include container();
 
-  margin-bottom: 60px;
+  margin-bottom: 54px;
 
   @media #{$tablet-widths} {
-    margin-bottom: 80px;
+    margin-bottom: 28px;
   }
 }
 
 .about-us__title {
   @include section-header();
+  margin-bottom: 30px;
 
   @media #{$tablet-widths} {
     margin: 0;
+    margin-bottom: 47px;
   }
 
   @media #{$desktop-widths} {
-    padding-left: 175px;
+    padding-left: 171px;
   }
 }
 
@@ -39,9 +41,13 @@
 
 .about-us__advantage {
   position: relative;
-  padding-top: 90px;
+  padding-top: 55px;
+  margin-bottom: 26px;
 
   font-weight: $font-bold;
+  font-size: $fs-base;
+  line-height: 21px;
+
   color: $font-black;
 
   &::before {
@@ -49,41 +55,56 @@
     position: absolute;
     width: 59px;
     height: 41px;
-    left: 7px;
-    top: 30px;
+
+    top: 0;
+    left: 0;
   }
 
   &#{&}--flower::before {
+    top: 2px;
+    left: 8px;
+
     background: url("../img/icon-feature-1.svg") no-repeat;
   }
 
   &#{&}--price::before {
-    left: 0;
+    top: 3px;
+
     background: url("../img/icon-feature-3.svg") no-repeat;
   }
 
   &#{&}--heart::before {
+    top: 8px;
+    left: 8px;
+
     background: url("../img/icon-feature-5.svg") no-repeat;
   }
 
   &#{&}--ball-of-wool::before {
+    top: 5px;
     left: 3px;
+
     background: url("../img/icon-feature-2.svg") no-repeat;
   }
 
   &#{&}--rocket::before {
-    left: 0px;
+    top: 6px;
+
     background: url("../img/icon-feature-4.svg") no-repeat;
   }
 
   &#{&}--gift::before {
+    top: 4px;
     left: 3px;
+
     background: url("../img/icon-feature-6.svg") no-repeat;
   }
 
   @media #{$tablet-widths} {
     width: 50%;
     font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 52px;
 
     &#{&}--flower {
       order: 0;
@@ -108,5 +129,9 @@
     &#{&}--gift {
       order: 5;
     }
+  }
+
+  @media #{$desktop-widths} {
+    width: 40%;
   }
 }

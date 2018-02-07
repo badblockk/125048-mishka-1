@@ -26,17 +26,22 @@
 }
 
 .page-footer__social {
-  padding: 25px 0;
-  border-bottom: $border-color solid 1px;
+  width: 140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 22px 62px 28px 57px;
+  border-bottom: $border-footer solid 1px;
 
   @media #{$tablet-widths} {
-    width: 44%;
     border: none;
   }
 }
 
 .page-footer__copyright {
-  padding: 20px 0;
+  padding: 21px 0;
+  padding-bottom: 23px;
 
   font-size: 0;
 
@@ -48,13 +53,18 @@
 
 .page-footer__copyright-text {
   display: inline-block;
-  padding: 8.5px 0;
-  padding-right: 29px;
+  padding-bottom: 5px;
+  padding-right: 30px;
   vertical-align: middle;
   font-size: 19px;
   line-height: 19px;
   font-weight: $font-bold;
   color: $font-black;
+
+  @media #{$tablet-widths} {
+    padding-bottom: 3px;
+    padding-right: 27px;
+  }
 }
 
 .page-footer__copyright-link {
@@ -64,4 +74,8 @@
   width: 29px;
   height: 36px;
   background: url("../img/logo-htmlacademy.svg") no-repeat;
+
+  @media #{$tablet-widths} {
+    background-position: 2px;
+  }
 }

@@ -1,10 +1,11 @@
 .btn {
   display: block;
   margin: auto;
-  padding: 15px 20px;
+  padding: 12px 20px;
 
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: $font-bold;
-  font-size: $fs-base;
+  font-size: $fs-btn;
   text-align: center;
   color: $btn-brown;
   text-transform: uppercase;
@@ -12,6 +13,8 @@
 
   background-color: $bg-white;
   border: $btn-brown solid 2px;
+
+  cursor: pointer;
 
   &:hover {
     color: $font-white;
