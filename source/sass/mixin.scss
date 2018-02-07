@@ -1,0 +1,31 @@
+@mixin page-header() {
+  // padding: 0 30px;
+  padding: 70px 0;
+  font-weight: $font-bold;
+  font-size: $page-header-fs;
+  line-height: $page-header-lh;
+  text-align: center;
+  color: $page-header-color;
+}
+
+@mixin section-header() {
+  font-weight: $font-bold;
+  font-size: $section-header-fs;
+  line-height: $section-header-lh;
+  color: $section-header-color;
+}
+
+@mixin btn() {
+  padding: 15px 20px;
+  margin: auto;
+  display: block;
+  text-align: center;
+  font-weight: $font-bold;
+  font-size: $btn-fs;
+  color: $btn-color;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $bg-btn;
+  border: $btn-color solid 2px;
+}

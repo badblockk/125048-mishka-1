@@ -1,0 +1,30 @@
+.video {
+  margin: 0 29px;
+  margin-bottom: 80px;
+
+  border: $border-color solid 1px;
+}
+
+.video__title {
+  padding-left: 90px;
+
+  font-size: $video-title-fs;
+  color: $section-header-color;
+}
+
+.video__description {
+  margin: 0;
+  padding: 25px;
+
+  font-size: $video-desc-fs;
+}
+
+.video__content {
+  img {
+    display: block;
+  }
+}
+
+.video__to-order {
+  margin: 25px;
+}
