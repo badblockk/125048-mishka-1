@@ -125,6 +125,10 @@
       background-color: $bg-input;
     }
   }
+
+  @media #{$desktop-widths} {
+    padding-right: 0;
+  }
 }
 
 .order-form__legend {
@@ -173,33 +177,50 @@
 .order-form__inner-wrapper {
 
   &#{&}--tel {
-    margin-top: 13px;
     position: relative;
+    padding-top: 13px;
 
-    &::after {
+    svg {
       position: absolute;
-      content: "";
-      width: 25px;
-      height: 24px;
-      background-image: url("../img/icon-phone.svg");
-      background-repeat: no-repeat;
-      bottom: 17px;
-      right: 9px;
+      top: 9px;
+      right: 8px;
+      opacity: 0.2;
+    }
+
+    &:hover {
+      svg {
+        fill: $input-fill;
+      }
+    }
+
+    &:active {
+      svg {
+        fill: $input-fill;
+      }
     }
   }
 
   &#{&}--email {
-    margin-top: 12px;
+    padding-top: 12px;
     position: relative;
 
-    &::after {
+    svg {
       position: absolute;
-      content: "";
-      width: 32px;
-      height: 27px;
-      background-image: url("../img/icon-mail.svg");
-      bottom: 14px;
-      right: 5px;
+      top: 8px;
+      right: 4px;
+      opacity: 0.2;
+    }
+
+    &:hover {
+      svg {
+        fill: $input-fill;
+      }
+    }
+
+    &:active {
+      svg {
+        fill: $input-fill;
+      }
     }
   }
 
@@ -218,14 +239,18 @@
     }
 
     &#{&}--tel {
-      &::after {
-        right: 26px;
+
+      svg {
+        top: 14px;
+        right: 25px;
       }
     }
 
     &#{&}--email {
-      &::after {
-        right: 22px;
+
+      svg {
+        top: 15px;
+        right: 21px;
       }
     }
 
@@ -246,14 +271,16 @@
     }
 
     &#{&}--tel {
-      &::after {
-        right: 8px;
+      svg {
+        top: 15px;
+        right: 4px;
       }
     }
 
     &#{&}--email {
-      &::after {
-        right: 4px;
+      svg {
+        top: 14px;
+        right: 8px;
       }
     }
   }
@@ -310,8 +337,8 @@
     &#{&}--fullname {
       display: flex;
       width: 100%;
-      padding: 20px 0;
-      padding-bottom: 16px;
+      padding: 16px 0;
+      padding-bottom: 17px;
 
       align-items: baseline;
     }
@@ -322,6 +349,7 @@
 
     &#{&}--fullname {
       width: 100%;
+      padding: 16.5px 0;
     }
 
     &#{&}--checkbox {
@@ -367,7 +395,6 @@
       content: "";
       width: 15px;
       height: 15px;
-      // top: 17px;
       top: 50%;
       left: 2px;
       transform: translateY(-50%);
