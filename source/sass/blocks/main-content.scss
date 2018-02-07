@@ -1,17 +1,32 @@
 .main-content {
+  margin-bottom: 39px;
+
   @media #{$tablet-widths} {
     margin-bottom: 57px;
 
     &#{&}--catalog-page {
+      padding-top: 34px;
       margin-bottom: 63px;
     }
 
     &#{&}--form-page {
+      margin-top: 75px;
       margin-bottom: 50px;
     }
   }
 
   @media #{$desktop-widths} {
     margin-bottom: 105px;
+
+    &#{&}--catalog-page {
+      padding-top: 58px;
+      margin-bottom: 105px;
+    }
+
+    &#{&}--form-page {
+      margin-top: 126px;
+      margin-bottom: 48px;
+    }
+
   }
 }

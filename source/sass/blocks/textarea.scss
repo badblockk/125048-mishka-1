@@ -1,11 +1,29 @@
 .textarea {
+  display: block;
   box-sizing: border-box;
 
-  color: $textarea-color;
+  font-size: $fs-base;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: $font-black;
 
   border: $textarea-border solid 2px;
+  outline: none;
 
   resize: none;
+
+  &::-webkit-input-placeholder,
+  &:-ms-input-placeholder,
+  &::-ms-input-placeholder {
+    color: $placeholder-color;
+  }
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:focus {
+    border-color: #62d1ba;
+  }
 
   @media #{$tablet-widths} {
     font-size: 19px;

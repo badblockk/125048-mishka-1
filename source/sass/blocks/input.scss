@@ -3,9 +3,30 @@
 
   font-size: $fs-base;
   line-height: $lh-base-bigger;
+  font-family: "Open Sans", "Arial", sans-serif;
 
   border: none;
-  border-bottom: #000 solid 2px;
+  border-bottom: $font-black solid 2px;
+  outline: none;
+
+  &::-webkit-input-placeholder,
+  &:-ms-input-placeholder,
+  &::-ms-input-placeholder {
+    font-weight: 400;
+    font-size: $fs-base;
+    color: $placeholder-color;
+    font-style: normal;
+  }
+
+  &:hover {
+    border-color: $input-tiffany;
+  }
+
+  &:focus {
+    color: $font-black;
+
+    border-color: $input-tiffany;
+  }
 
   &#{&}--radio {
     display: none;
@@ -19,14 +40,22 @@
     font-size: 19px;
     line-height: 19px;
 
-    &#{&}--tel {
-      background-color: $bg-input;
-      box-sizing: border-box;
+    &::-webkit-input-placeholder,
+    &:-ms-input-placeholder,
+    &::-ms-input-placeholder {
+      font-size: 19px;
     }
 
-    &#{&}--email  {
-      background-color: $bg-input;
+    &#{&}--tel {
       box-sizing: border-box;
+
+      background-color: $bg-input;
+    }
+
+    &#{&}--email {
+      box-sizing: border-box;
+
+      background-color: $bg-input;
     }
   }
 }

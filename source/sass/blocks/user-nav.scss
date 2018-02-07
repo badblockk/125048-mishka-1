@@ -1,16 +1,28 @@
 .user-nav {
   @include list();
+  position: absolute;
+  top: 238px;
+  width: 100%;
+  z-index: 10;
 
   @media #{$tablet-widths} {
+    position: static;
+    width: 397px;
+    min-height: 87px;
+    border: $border-color solid 1px;
+    border-right: none;
     display: flex;
     order: -1;
-    border-bottom: $border-color solid 1px;
+  }
+
+  @media #{$desktop-widths} {
+    width: 399px;
   }
 }
 
 .user-nav__item {
   background: $bg-white;
-  padding: 30px;
+  padding: 27px 30px;
   border-bottom: $border-color solid 1px;
   font-weight: $font-bold;
   font-size: $fs-base;
@@ -52,25 +64,28 @@
   &::before {
     content: "";
     position: absolute;
-    top: 2px;
-    left: 0;
     opacity: 0.3;
   }
 
   &#{&}--search::before {
     width: 18px;
     height: 19px;
+    top: 4px;
+    left: 2px;
     background: url("../img/icon-search.svg") no-repeat;
   }
 
   &#{&}--cart::before {
     width: 21px;
     height: 19px;
+    top: 3px;
+    left: 1px;
     background: url("../img/icon-cart.svg") no-repeat;
   }
 
   @media #{$tablet-widths} {
     &#{&}--search::before {
+      top: 5px;
       left: 33px;
     }
 

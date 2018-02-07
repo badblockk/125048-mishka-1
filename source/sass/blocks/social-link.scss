@@ -8,20 +8,21 @@
   &#{&}--inst {
     width: 22px;
     height: 29px;
-    background: url("../img/icon-insta.svg") bottom no-repeat;
-    margin-right: 41px;
+    background: url("../img/icon-insta.svg") no-repeat;
+    background-position-y: 8px;
   }
 
   &#{&}--fb {
-    width: 15px;
-    height: 29px;
+    width: 17px;
+    height: 30px;
     background: url("../img/icon-fb.svg") no-repeat;
-    margin-right: 39px;
+    background-position: 2px;
   }
 
   &#{&}--tw {
     width: 24px;
     height: 29px;
-    background: url("../img/icon-twitter.svg") bottom no-repeat;
+    background: url("../img/icon-twitter.svg") no-repeat;
+    background-position-y: 8px;
   }
 }

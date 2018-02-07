@@ -2,31 +2,47 @@
   margin-bottom: 30px;
 
   @media #{$tablet-widths} {
+    margin-bottom: 54px;
     display: flex;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   @media #{$desktop-widths} {
-    width: 315px;
+    width: 317px;
     flex-direction: column;
+    margin-bottom: 0;
   }
 }
 
 .catalog-item__title {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 4px;
 
   font-weight: $font-bold;
   font-size: $fs-base;
   color: $font-black;
   text-decoration: none;
 
+  &:hover {
+    color: #8d8d8d;
+  }
+
+  &:active {
+    color: #cacaca;
+  }
+
   @media #{$tablet-widths} {
-    margin-bottom: 0;
+    margin-bottom: 5px;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
 .catalog-item__description {
-  padding: 25px;
+  padding: 27px;
 
   border: $border-color solid 1px;
 
@@ -39,6 +55,7 @@
   }
 
   @media #{$tablet-widths} {
+    padding-top: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -54,14 +71,32 @@
   }
 
   @media #{$tablet-widths} {
-    width: 314px;
-    height: 314px; // Временно
+
+    img {
+      width: 333px;
+      height: 334px;
+      display: block;
+    }
+    // width: 333px;
+    // height: 334px; // Временно
     background-color: #e4e4e4;
+  }
+
+  @media #{$desktop-widths} {
+    img {
+      width: 316px; //Временно
+      height: 462px;
+
+    }
   }
 }
 
 .catalog-item__info {
-  margin-bottom: 25px;
+  margin-bottom: 19px;
+
+  @media #{$desktop-widths} {
+    margin-bottom: 14px;
+  }
 }
 
 .catalog-item__details {
@@ -71,6 +106,7 @@
   line-height: $lh-large;
 
   @media #{$tablet-widths} {
+    font-size: 15px;
     padding-bottom: 0;
     border: none;
   }
@@ -78,9 +114,18 @@
 
 .catalog-item__price {
   display: flex;
-  padding-top: 25px;
+  padding-top: 21px;
   border-top: $border-color solid 1px;
   justify-content: space-between;
+
+  @media #{$tablet-widths} {
+    padding-left: 5px;
+  }
+
+  @media #{$desktop-widths} {
+    padding-left: 0;
+    padding-top: 22px;
+  }
 }
 
 .catalog-item__price-value {
@@ -90,13 +135,17 @@
   color: $font-black;
 
   @media #{$tablet-widths} {
+    font-size: $fs-base;
     margin-top: 0;
   }
 }
 
 .catalog_item__add-to-cart {
-  width: 21px;
-  heigth: 24px;
+  width: 20px;
   background: url("../img/icon-cart.svg") no-repeat;
   opacity: 0.3;
+
+  @media #{$tablet-widths} {
+    margin-right: 5px;
+  }
 }

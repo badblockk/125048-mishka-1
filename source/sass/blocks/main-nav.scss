@@ -1,39 +1,62 @@
 .main-nav {
   @include list();
 
+  position: absolute;
+  top: 80px;
+  z-index: 10;
+
+  width: 100%;
+
   @media #{$tablet-widths} {
+    position: static;
+
     display: flex;
     width: 334px;
     padding-left: 50px;
 
-    background: $bg-header;
+    &#{&}--dark-gray {
+      background-color: $bg-title;
+    }
   }
 
   @media #{$desktop-widths} {
-    padding: 0;
     width: 426px;
-    display: flex;
+    min-height: 87px;
+    padding: 0;
+
     order: -3;
     background: $bg-white;
+    border-top: $border-color solid 1px;
     border-bottom: $border-color solid 1px;
+
+    &#{&}--dark-gray {
+      background-color: $bg-white;
+    }
   }
 }
 
 .main-nav__item {
   font-weight: $font-bold;
   font-size: $fs-base;
-
   background: $bg-white;
+
   border-bottom: $border-color solid 1px;
 
   @media #{$tablet-widths} {
     width: 50%;
-    padding: 19px 0;
+    padding: 18px 0;
 
     font-size: 15px;
     text-align: left;
 
-    background: $bg-header;
+    &#{&}--light-gray {
+      background-color: $bg-header;
+    }
+
+    &#{&}--dark-gray {
+      background-color: $bg-title;
+    }
+
     border: none;
   }
 
@@ -43,8 +66,15 @@
     border: none;
     padding: 31px 0;
     padding-left: 35px;
-    background: $bg-white;
     font-size: 17px;
+
+    &#{&}--light-gray {
+      background-color: $bg-white;
+    }
+
+    &#{&}--dark-gray {
+      background-color: $bg-white;
+    }
 
     &:first-child {
       padding-left: 50px;
@@ -55,7 +85,7 @@
 }
 
 .main-nav__link {
-  padding: 30px 60px;
+  padding: 27px 60px;
   padding-left: 75px;
   color: $font-black;
   display: block;

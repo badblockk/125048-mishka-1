@@ -1,3 +1,5 @@
+$mobile-widths-only: "(max-width: 767px)";
+
 $tablet-widths: "(min-width: 768px)";
 $desktop-widths: "(min-width: 1150px)";
 
@@ -8,11 +10,13 @@ $font-black: #000;
 $link-hover: #8d8d8d;
 $link-active: #cacaca;
 
-$textarea-color: #d2d2d2;
+$placeholder-color: #d2d2d2;
 $textarea-border: #444;
 
 $font-tiffany: #63d1bb;
 $font-darktiffany: #56c3b2;
+
+$input-tiffany: #62d1ba;
 
 $bg-white: #fff;
 
@@ -26,17 +30,22 @@ $bg-darktiffany-effect: #46c1ae;
 
 $bg-header: #f9f9f9;
 $bg-footer: #f1f1f1;
-$bg-title: #f9f9f9; //#fbfbfb;
+
+$bg-title: #f1f1f1;
+
+$footer-line: #e5e5e5;
 
 $link-brown: #444;
 $btn-brown: #444;
 $btn-brown-active: #8d8d8d;
 
+$border-footer: #e5e5e5;
 $border-color: #ececec;
 $shadow-color: #ececec;
 
 $fs-small: 13px;
 $fs-base: 17px;
+$fs-btn: 18px;
 $fs-base-bigger: 18px;
 
 $lh-base: 17px;
