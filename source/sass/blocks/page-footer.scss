@@ -1,20 +1,67 @@
 .page-footer {
   text-align: center;
 
-  background-color: $bg-gray;
+  background-color: $bg-footer;
+}
+
+.page-footer__wrapper {
+  @include container();
+
+  @media #{$tablet-widths} {
+    padding: 34px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media #{$tablet-widths} {
+    width: 28%;
+    display: block;
+    text-align: left;
+  }
 }
 
 .page-footer__social {
-  margin: 0 30px;
-
+  padding: 25px 0;
   border-bottom: $border-color solid 1px;
+
+  @media #{$tablet-widths} {
+    width: 44%;
+    border: none;
+  }
 }
 
 .page-footer__copyright {
   padding: 20px 0;
 
+  font-size: 0;
+
+  @media #{$tablet-widths} {
+    width: 28%;
+    text-align: right;
+  }
+}
+
+.page-footer__copyright-text {
+  display: inline-block;
+  padding: 8.5px 0;
+  padding-right: 29px;
+  vertical-align: middle;
+  font-size: 19px;
+  line-height: 19px;
   font-weight: $font-bold;
-  font-size: $copyright-fs;
-  line-height: $copyright-lh;
-  color: $copyright-color;
+  color: $font-black;
+}
+
+.page-footer__copyright-link {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  width: 29px;
+  height: 36px;
+  background: url("../img/logo-htmlacademy.svg") no-repeat;
 }

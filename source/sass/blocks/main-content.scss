@@ -1,0 +1,17 @@
+.main-content {
+  @media #{$tablet-widths} {
+    margin-bottom: 57px;
+
+    &#{&}--catalog-page {
+      margin-bottom: 63px;
+    }
+
+    &#{&}--form-page {
+      margin-bottom: 50px;
+    }
+  }
+
+  @media #{$desktop-widths} {
+    margin-bottom: 105px;
+  }
+}

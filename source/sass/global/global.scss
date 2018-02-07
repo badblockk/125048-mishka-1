@@ -3,7 +3,8 @@ html {
 }
 
 body {
-  width: 320px;
+  min-width: 320px;
+  // margin: 0 auto;
 
   font-weight: 400;
   font-size: 15px;

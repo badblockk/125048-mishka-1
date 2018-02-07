@@ -1,7 +1,27 @@
 .social-link {
+  position: relative;
   display: inline-block;
-  padding: 25px 0;
 
-  vertical-align: center;
   text-align: center;
+  font-size: 0;
+
+  &#{&}--inst {
+    width: 22px;
+    height: 29px;
+    background: url("../img/icon-insta.svg") bottom no-repeat;
+    margin-right: 41px;
+  }
+
+  &#{&}--fb {
+    width: 15px;
+    height: 29px;
+    background: url("../img/icon-fb.svg") no-repeat;
+    margin-right: 39px;
+  }
+
+  &#{&}--tw {
+    width: 24px;
+    height: 29px;
+    background: url("../img/icon-twitter.svg") bottom no-repeat;
+  }
 }
