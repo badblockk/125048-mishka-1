@@ -1,0 +1,13 @@
+.textarea {
+  box-sizing: border-box;
+
+  color: $textarea-color;
+
+  border: $textarea-border solid 2px;
+
+  resize: none;
+
+  @media #{$tablet-widths} {
+    font-size: 19px;
+  }
+}

@@ -1,24 +1,120 @@
 .reviews {
-  margin: 0 30px;
+  @include container();
+
+  margin-bottom: 40px;
+  padding-bottom: 50px;
+
+  @media #{$tablet-widths} {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 79px;
+    padding-bottom: 85px;
+    margin-bottom: 35px;
+    align-items: flex-end;
+
+    background: url("../img/review@1x.jpg") no-repeat;
+  }
+
+  @media #{$desktop-widths} {
+    background: url("../img/review@1x.jpg") 50px no-repeat;
+  }
 }
 
 .reviews__title {
   @include section-header();
+
+  @media #{$tablet-widths} {
+    order: -2;
+    margin: 0;
+  }
+
+  @media #{$desktop-widths} {
+    padding-left: 175px;
+  }
 }
 
 .reviews__item {
   margin: 0;
 
-  line-height: $review-lh;
+  line-height: $lh-large;
+
+  @media #{$desktop-widths} {
+    padding-left: 175px;
+  }
+}
+
+.reviews__author {
+  margin-bottom: 35px;
+
+  @media #{$tablet-widths} {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media #{$desktop-widths} {
+    padding-left: 175px;
+  }
 }
 
 .reviews__author-name {
   font-weight: $font-bold;
-  font-size: $review-author-fs;
-  color: $review-author-color;
-  font-style: normal;
+  font-size: $fs-base-bigger;
+  color: $font-black;
 }
 
 .reviews__author-email {
-  font-size: $review-author-fs;
+  font-size: $fs-base-bigger;
+}
+
+.reviews__controls {
+  display: flex;
+  height: 50px;
+  margin-bottom: 38px;
+
+  border: $border-color solid 1px;
+
+  @media #{$tablet-widths} {
+    width: 167px;
+    margin: 0;
+    border: none;
+  }
+}
+
+.reviews__prev {
+  outline: none;
+  cursor: pointer;
+  width: 50%;
+
+  background: url("../img/icon-left-arrow.svg") no-repeat center;
+  border: none;
+  border-right: $border-color solid 1px;
+
+  @media #{$tablet-widths} {
+    border-right: none
+  }
+}
+
+.reviews__next {
+  outline: none;
+  cursor: pointer;
+  width: 50%;
+
+  background: url("../img/icon-right-arrow.svg") no-repeat center;
+  border: none;
+}
+
+.reviews__text {
+  @media #{$tablet-widths} {
+    margin: 50px 0 70px 0;
+  }
+}
+
+.reviews__to-write {
+  @media #{$tablet-widths} {
+    order: -1;
+    margin: 0;
+    padding: 12px 38px;
+  }
 }

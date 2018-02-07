@@ -1,31 +1,49 @@
 @mixin page-header() {
-  // padding: 0 30px;
-  padding: 70px 0;
+  padding: 70px 0; // уточнить, почему такие паддинги
+
   font-weight: $font-bold;
-  font-size: $page-header-fs;
-  line-height: $page-header-lh;
+  font-size: $fs-page-header;
+  line-height: $lh-page-header;
   text-align: center;
-  color: $page-header-color;
+  color: $font-black;
 }
 
 @mixin section-header() {
   font-weight: $font-bold;
-  font-size: $section-header-fs;
-  line-height: $section-header-lh;
-  color: $section-header-color;
+  font-size: $fs-section-header;
+  line-height: $lh-section-header;
+  color: $font-black;
+  margin: 0 auto;
+
+  @media #{$tablet-widths} {
+    font-size: $fs-section-header-tablet;
+    line-height: $lh-section-header-tablet;
+  }
+
+  @media #{$desktop-widths} {
+    font-size: $fs-section-header-desktop;
+    line-height: $lh-section-header-desktop;
+  }
 }
 
-@mixin btn() {
-  padding: 15px 20px;
-  margin: auto;
-  display: block;
-  text-align: center;
-  font-weight: $font-bold;
-  font-size: $btn-fs;
-  color: $btn-color;
-  text-transform: uppercase;
-  text-decoration: none;
+@mixin container() {
+  padding: 0 30px;
 
-  background-color: $bg-btn;
-  border: $btn-color solid 2px;
+  @media #{$tablet-widths} {
+    padding: 0 50px;
+  }
+
+  @media #{$desktop-widths} {
+    max-width: 1050px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+  }
+}
+
+@mixin list() {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }

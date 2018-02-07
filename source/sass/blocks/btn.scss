@@ -1,3 +1,25 @@
 .btn {
-  @include btn();
+  display: block;
+  margin: auto;
+  padding: 15px 20px;
+
+  font-weight: $font-bold;
+  font-size: $fs-base;
+  text-align: center;
+  color: $btn-brown;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $bg-white;
+  border: $btn-brown solid 2px;
+
+  &:hover {
+    color: $font-white;
+
+    background-color: $btn-brown;
+  }
+
+  &:active {
+    color: $btn-brown-active;
+  }
 }

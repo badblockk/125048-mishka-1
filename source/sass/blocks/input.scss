@@ -1,11 +1,32 @@
 .input {
   display: block;
 
+  font-size: $fs-base;
+  line-height: $lh-base-bigger;
+
+  border: none;
+  border-bottom: #000 solid 2px;
+
   &#{&}--radio {
     display: none;
   }
 
   &#{&}--checkbox {
     display: none;
+  }
+
+  @media #{$tablet-widths} {
+    font-size: 19px;
+    line-height: 19px;
+
+    &#{&}--tel {
+      background-color: $bg-input;
+      box-sizing: border-box;
+    }
+
+    &#{&}--email  {
+      background-color: $bg-input;
+      box-sizing: border-box;
+    }
   }
 }

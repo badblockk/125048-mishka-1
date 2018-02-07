@@ -1,8 +1,23 @@
 .about-us {
-  margin: 0 30px;
+  @include container();
+
+  margin-bottom: 60px;
+
+  @media #{$tablet-widths} {
+    margin-bottom: 80px;
+  }
 }
+
 .about-us__title {
   @include section-header();
+
+  @media #{$tablet-widths} {
+    margin: 0;
+  }
+
+  @media #{$desktop-widths} {
+    padding-left: 175px;
+  }
 }
 
 .about-us__advantages {
@@ -10,11 +25,88 @@
   padding: 0;
 
   list-style: none;
+
+  @media #{$tablet-widths} {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media #{$desktop-widths} {
+    padding-left: 175px;
+  }
 }
 
 .about-us__advantage {
-  margin-top: 90px;
+  position: relative;
+  padding-top: 90px;
 
   font-weight: $font-bold;
-  color: $advantage-color;
+  color: $font-black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 59px;
+    height: 41px;
+    left: 7px;
+    top: 30px;
+  }
+
+  &#{&}--flower::before {
+    background: url("../img/icon-feature-1.svg") no-repeat;
+  }
+
+  &#{&}--price::before {
+    left: 0;
+    background: url("../img/icon-feature-3.svg") no-repeat;
+  }
+
+  &#{&}--heart::before {
+    background: url("../img/icon-feature-5.svg") no-repeat;
+  }
+
+  &#{&}--ball-of-wool::before {
+    left: 3px;
+    background: url("../img/icon-feature-2.svg") no-repeat;
+  }
+
+  &#{&}--rocket::before {
+    left: 0px;
+    background: url("../img/icon-feature-4.svg") no-repeat;
+  }
+
+  &#{&}--gift::before {
+    left: 3px;
+    background: url("../img/icon-feature-6.svg") no-repeat;
+  }
+
+  @media #{$tablet-widths} {
+    width: 50%;
+    font-size: 20px;
+
+    &#{&}--flower {
+      order: 0;
+    }
+
+    &#{&}--price {
+      order: 2;
+    }
+
+    &#{&}--heart {
+      order: 4;
+    }
+
+    &#{&}--ball-of-wool {
+      order: 1;
+    }
+
+    &#{&}--rocket {
+      order: 3;
+    }
+
+    &#{&}--gift {
+      order: 5;
+    }
+  }
 }
