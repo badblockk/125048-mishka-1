@@ -111,7 +111,7 @@
     order: -1;
     width: 668px;
     height: 456px;
-    background-color: #f2f2f2; //Временно
+    background-color: #f2f2f2;
     margin: 0 auto;
 
     img {
@@ -129,7 +129,7 @@
     margin-bottom: 0;
 
     img {
-      width: 682px; // Временно
+      width: 682px;
       height: 455px;
     }
   }
@@ -142,21 +142,22 @@
   background: url("../img/icon-play.svg") no-repeat transparent;
   border: none;
   top: 50%;
-  left: 51.3%; // Под макет
+  left: 51.3%;
   cursor: pointer;
-  transform: translate(-50%, -51.3%); // Под макет
+  transform: translate(-50%, -51.3%);
+  outline: none;
 
-  // Тут по-хорошему нужен удобный миксин для вычисления?
   &:hover {
     width: calc(102px * 1.2);
     height: calc(76px * 1.2);
     background-size: contain;
   }
 
-  // И тут?
   &:active {
     width: calc(102px * 0.8);
     height: calc(76px * 0.8);
+    background-size: contain;
+    opacity: 0.3;
   }
 }
 

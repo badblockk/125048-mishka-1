@@ -1,12 +1,10 @@
 .label {
   cursor: pointer;
-  // padding: 20px 0;
   font-weight: $font-bold;
   font-size: $fs-base;
   line-height: $lh-base-bigger;
 
   @media #{$tablet-widths} {
-    // padding: 14px 0;
     font-size: 19px;
     line-height: 24px;
   }

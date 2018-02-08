@@ -64,40 +64,40 @@
     top: 2px;
     left: 8px;
 
-    background: url("../img/icon-feature-1.svg") no-repeat;
+    background: url("../img/icon-feature-flower.svg") no-repeat;
   }
 
   &#{&}--price::before {
     top: 3px;
 
-    background: url("../img/icon-feature-3.svg") no-repeat;
+    background: url("../img/icon-feature-money.svg") no-repeat;
   }
 
   &#{&}--heart::before {
     top: 8px;
     left: 8px;
 
-    background: url("../img/icon-feature-5.svg") no-repeat;
+    background: url("../img/icon-feature-heart.svg") no-repeat;
   }
 
   &#{&}--ball-of-wool::before {
     top: 5px;
     left: 3px;
 
-    background: url("../img/icon-feature-2.svg") no-repeat;
+    background: url("../img/icon-feature-ball.svg") no-repeat;
   }
 
   &#{&}--rocket::before {
     top: 6px;
 
-    background: url("../img/icon-feature-4.svg") no-repeat;
+    background: url("../img/icon-feature-rocket.svg") no-repeat;
   }
 
   &#{&}--gift::before {
     top: 4px;
     left: 3px;
 
-    background: url("../img/icon-feature-6.svg") no-repeat;
+    background: url("../img/icon-feature-gift.svg") no-repeat;
   }
 
   @media #{$tablet-widths} {

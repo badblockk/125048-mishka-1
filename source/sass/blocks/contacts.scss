@@ -124,13 +124,28 @@
 }
 
 .contacts__map {
+  position: relative;
   height: 457px;
   margin-bottom: 39px;
 
+  background-color: #f3f1ea;
   background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+
+  &#{&}--nojs {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 66px;
+      height: 100.801px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url("../img/icon-map-pin.svg");
+    }
+  }
 
   @media #{$retina} {
     background-image: url("../img/map-mobile@2x.jpg");

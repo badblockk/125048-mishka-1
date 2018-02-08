@@ -1,19 +1,26 @@
 .modal-cart {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+
+  display: block;
   width: 260px;
-  margin: 0 auto;
+  margin: auto;
   padding: 45px 30px;
   padding-top: 31px;
-
-  border-top: $border-color solid 1px;
+  background-color: $bg-white;
+  border-top: $border-modal solid 1px;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.25);
 
   @media #{$tablet-widths} {
     width: 565px;
-    margin: 50px auto;
     padding: 33px 100px;
     padding-bottom: 47px;
     box-sizing: border-box;
 
-    border: $border-color solid 1px;
+    border: $border-modal solid 1px;
   }
 }
 
@@ -32,7 +39,10 @@
     margin-bottom: 14px;
     font-size: 30px;
     line-height: 57px;
+  }
 
+  @media #{$desktop-widths} {
+    font-size: 30px;
   }
 }
 
