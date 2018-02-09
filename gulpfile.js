@@ -4,8 +4,9 @@ var gulp = require("gulp");
 var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
+var posthtml = require("gulp-posthtml");
+var include = require("posthtml-include");
 var autoprefixer = require("autoprefixer");
-var server = require("browser-sync").create();
 var minify = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
 var rename = require("gulp-rename");
@@ -14,6 +15,7 @@ var svgmin = require("gulp-svgmin");
 var server = require("browser-sync").create();
 var del = require("del");
 var run = require("run-sequence");
+var server = require("browser-sync").create();
 
 gulp.task("clean", function() {
   return del("build");
@@ -64,9 +66,17 @@ gulp.task("symbols", function() {
   .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("serve", ["style"], function() {
+gulp.task("html", function () {
+  return gulp.src("source/*.html")
+    .pipe(posthtml([
+    include()
+  ]))
+  .pipe(gulp.dest("build"));
+});
+
+gulp.task("serve", function() {
   server.init({
-	server: "build",
+	server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -74,16 +84,17 @@ gulp.task("serve", ["style"], function() {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/*.html", ["html"]);
 });
 
-gulp.task("build", function(fn) {
+gulp.task("build", function(done) {
   run(
     "clean",
     "copy",
     "style",
     "images",
     "symbols",
-    fn
+    "html",
+    done
   );
 });
