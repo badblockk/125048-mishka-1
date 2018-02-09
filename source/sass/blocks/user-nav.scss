@@ -5,6 +5,16 @@
   width: 100%;
   z-index: 10;
 
+  @media #{$mobile-widths-only} {
+    &#{&}--closed {
+      display: none;
+    }
+
+    &#{&}--nojs {
+      position: static;
+    }
+  }
+
   @media #{$tablet-widths} {
     position: static;
     width: 397px;
