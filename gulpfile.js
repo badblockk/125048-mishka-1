@@ -9,6 +9,7 @@ var include = require("posthtml-include");
 var autoprefixer = require("autoprefixer");
 var minify = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
+var webp = require("gulp-webp");
 var rename = require("gulp-rename");
 var svgstore = require("gulp-svgstore");
 var svgmin = require("gulp-svgmin");
@@ -19,6 +20,12 @@ var server = require("browser-sync").create();
 
 gulp.task("clean", function() {
   return del("build");
+});
+
+gulp.task("webp", function () {
+  return gulp.src("source/img/**/*.{png,jpg}")
+  .pipe(webp({quality: 90}))
+  .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("copy", function() {

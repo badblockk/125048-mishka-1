@@ -102,7 +102,6 @@
 }
 
 .order-form__fieldset-wrapper {
-
   @media #{$tablet-widths} {
     display: flex;
     align-items: baseline;
@@ -121,6 +120,7 @@
 
   @media #{$tablet-widths} {
     padding-right: 0;
+
     &#{&}--gray {
       background-color: $bg-input;
     }
@@ -150,15 +150,14 @@
   }
 
   @media #{$tablet-widths} {
-
-    &::after {
-      display: none;
-    }
-
     width: 167px;
     padding: 20px 0;
     padding-right: 25px;
     box-sizing: border-box;
+
+    &::after {
+      display: none;
+    }
   }
 
   @media #{$desktop-widths} {
@@ -167,13 +166,12 @@
     padding-right: 12px;
 
     &#{&}--email {
-      padding-right: 0px;
+      padding-right: 0;
     }
   }
 }
 
 .order-form__inner-wrapper {
-
   &#{&}--tel {
     position: relative;
     padding-top: 13px;
@@ -241,7 +239,6 @@
     }
 
     &#{&}--tel {
-
       svg {
         top: 14px;
         right: 25px;
@@ -249,7 +246,6 @@
     }
 
     &#{&}--email {
-
       svg {
         top: 15px;
         right: 21px;
@@ -384,7 +380,7 @@
       width: 100%;
     }
 
-    &#{&}--email  {
+    &#{&}--email {
       width: 100%;
     }
   }
@@ -403,15 +399,15 @@
       background-color: $bg-white;
       border: $bg-white solid 10px;
       border-radius: 50%;
-      box-shadow: 0px 0px 0px 2px #444;
+      box-shadow: 0 0 0 2px #444444;
     }
 
     &:hover::before {
-      box-shadow: 0px 0px 0px 2px #62d1ba;
+      box-shadow: 0 0 0 2px #62d1ba;
     }
 
     &:active::before {
-      box-shadow: 0px 0px 0px 2px #c7c7c7;
+      box-shadow: 0 0 0 2px #c7c7c7;
     }
   }
 
@@ -423,7 +419,7 @@
       height: 35px;
       top: 14px;
       left: 0;
-      border: #444 solid 2px;
+      border: #444444 solid 2px;
     }
 
     &:hover::before {
@@ -435,24 +431,15 @@
     }
   }
 
-  // &#{&}--toy {
-  //   &::before {
-  //     top: 10px;
-  //     left: 3px;
-  //   }
-  // }
-
   &#{&}--fullname {
     display: block;
     margin-bottom: 17px;
   }
 
-
   @media #{$tablet-widths} {
     margin-bottom: 24px;
 
     &#{&}--radio {
-
       &:last-of-type {
         margin-bottom: 0;
       }
@@ -460,8 +447,6 @@
       &::before {
         width: 22px;
         height: 22px;
-        // top: 18px;
-        // left: 2px;
         border: $bg-white solid 13px;
       }
     }

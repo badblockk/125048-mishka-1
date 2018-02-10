@@ -124,7 +124,7 @@
   @include page-header();
 
   margin: 0 auto;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 
   background-color: #f1f1f1;
 
@@ -202,18 +202,18 @@
 
   &#{&}--closed {
     &::before {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 2px;
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 2px;
 
-    top: 3px;
-    left: 0;
+      top: 3px;
+      left: 0;
 
-    transform: rotate(0);
-    background-color: #221f1f;
-    box-shadow: 0 6px 0 0 #221f1f,
-                0 12px 0 0 #221f1f;
+      transform: rotate(0);
+      background-color: #221f1f;
+      box-shadow: 0 6px 0 0 #221f1f,
+        0 12px 0 0 #221f1f;
     }
 
     &::after {

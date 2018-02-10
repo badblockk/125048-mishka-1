@@ -79,14 +79,12 @@
       height: 334px;
       display: block;
     }
-
   }
 
   @media #{$desktop-widths} {
     img {
-      width: 316px; //Временно
+      width: 316px;
       height: 462px;
-
     }
   }
 }
