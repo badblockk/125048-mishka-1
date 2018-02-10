@@ -102,7 +102,6 @@
 }
 
 .order-form__fieldset-wrapper {
-
   @media #{$tablet-widths} {
     display: flex;
     align-items: baseline;
@@ -121,6 +120,7 @@
 
   @media #{$tablet-widths} {
     padding-right: 0;
+	
     &#{&}--gray {
       background-color: $bg-input;
     }
@@ -150,15 +150,14 @@
   }
 
   @media #{$tablet-widths} {
-
-    &::after {
-      display: none;
-    }
-
     width: 167px;
     padding: 20px 0;
     padding-right: 25px;
     box-sizing: border-box;
+	
+	&::after {
+      display: none;
+    }
   }
 
   @media #{$desktop-widths} {
@@ -384,7 +383,7 @@
       width: 100%;
     }
 
-    &#{&}--email  {
+    &#{&}--email {
       width: 100%;
     }
   }
@@ -403,15 +402,15 @@
       background-color: $bg-white;
       border: $bg-white solid 10px;
       border-radius: 50%;
-      box-shadow: 0px 0px 0px 2px #444;
+      box-shadow: 0 0 0 2px #444444;
     }
 
     &:hover::before {
-      box-shadow: 0px 0px 0px 2px #62d1ba;
+      box-shadow: 0 0 0 2px #62d1ba;
     }
 
     &:active::before {
-      box-shadow: 0px 0px 0px 2px #c7c7c7;
+      box-shadow: 0 0 0 2px #c7c7c7;
     }
   }
 
@@ -423,7 +422,7 @@
       height: 35px;
       top: 14px;
       left: 0;
-      border: #444 solid 2px;
+      border: #444444 solid 2px;
     }
 
     &:hover::before {
