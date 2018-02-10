@@ -164,13 +164,12 @@
     padding-right: 12px;
 
     &#{&}--email {
-      padding-right: 0px;
+      padding-right: 0;
     }
   }
 }
 
 .order-form__inner-wrapper {
-
   &#{&}--tel {
     position: relative;
     padding-top: 13px;
@@ -238,7 +237,6 @@
     }
 
     &#{&}--tel {
-
       svg {
         top: 14px;
         right: 25px;
@@ -246,7 +244,6 @@
     }
 
     &#{&}--email {
-
       svg {
         top: 15px;
         right: 21px;
@@ -457,8 +454,6 @@
       &::before {
         width: 22px;
         height: 22px;
-        // top: 18px;
-        // left: 2px;
         border: $bg-white solid 13px;
       }
     }
