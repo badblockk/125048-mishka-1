@@ -101,6 +101,16 @@
     }
   }
 
+  @media #{$mobile-widths-only} {
+    line-height: 28px;
+    padding-top: 0;
+    padding-right: 58px;
+  }
+
+  @media #{$tablet-widths} {
+    padding-right: 54px;
+  }
+
   @media #{$desktop-widths} {
     padding-right: 57px;
   }

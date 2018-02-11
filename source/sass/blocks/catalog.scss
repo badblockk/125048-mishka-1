@@ -12,3 +12,7 @@
     margin-bottom: 57px;
   }
 }
+
+.catalog__title {
+  @include visuallyhidden;
+}
