@@ -1,6 +1,10 @@
 .catalog-item {
   margin-bottom: 30px;
 
+  @media #{$mobile-widths-only} {
+    margin-bottom: 29px;
+  }
+
   @media #{$tablet-widths} {
     margin-bottom: 54px;
     display: flex;

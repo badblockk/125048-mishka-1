@@ -11,6 +11,10 @@
   font-size: $fs-small;
   margin-bottom: 13px;
 
+  @media #{$mobile-widths-only} {
+    margin-top: -7px;
+  }
+
   @media #{$tablet-widths} {
     @include container();
 
@@ -519,5 +523,29 @@
     margin: 0;
 
     order: -1;
+  }
+}
+
+.order-form__inner-wrapper .order-form__input-wrapper--accessory {
+
+  @media #{$mobile-widths-only} {
+    margin-top: 12px;
+    line-height: 12px;
+    margin-bottom: 3px;
+  }
+}
+
+.order-form__label--accessory::before {
+
+  @media #{$mobile-widths-only} {
+    margin-top: -8px;
+    margin-bottom: 0;
+  }
+}
+
+.order-form__inner-wrapper .order-form__input-wrapper--toy {
+
+  @media #{$mobile-widths-only} {
+    margin-bottom: 15px;
   }
 }
