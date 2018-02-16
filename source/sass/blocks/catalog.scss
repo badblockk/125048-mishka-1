@@ -14,5 +14,5 @@
 }
 
 .catalog__title {
-  @include visuallyhidden;
+  @include visuallyhidden();
 }
