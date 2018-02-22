@@ -29,11 +29,11 @@
   }
 
   &#{&}--radio {
-    display: none;
+    @include visuallyhidden();
   }
 
   &#{&}--checkbox {
-    display: none;
+    @include visuallyhidden();
   }
 
   @media #{$tablet-widths} {

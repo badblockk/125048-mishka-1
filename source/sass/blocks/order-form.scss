@@ -549,3 +549,7 @@
     margin-bottom: 15px;
   }
 }
+
+.order-form__input:focus + .order-form__label::before {
+  outline: none;
+}
