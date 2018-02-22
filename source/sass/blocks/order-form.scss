@@ -551,5 +551,5 @@
 }
 
 .order-form__input:focus + .order-form__label::before {
-  outline: none;
+  box-shadow: 0 0 0 2px #62d1ba;
 }
